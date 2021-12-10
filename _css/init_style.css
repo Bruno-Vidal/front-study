@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 24px;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    max-width: 80%;
+    margin: 20px auto;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px auto;
+    width: 40%;
+    background-color: rgba(50,50,50,1);
+    overflow: hidden;
+    border-right-color: rgba(255,0,0,0);
+    border-right-style: solid;
+    border-right-width: 3px;
+    transition: 0.2s ease-out;
+
+}
+
+.container:hover {
+    border-right-color: red;
+    border-right-style: solid;
+    border-right-width: 3px;
+}
+
+.container > * {
+    margin: 5px;
+    background-color: azure;
+    background-color: rgba(150,150,150,1);
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.container > *:hover {
+    transform: scaleY(1.2);
+    background-color: rgba(200,200,200,1);
+}
